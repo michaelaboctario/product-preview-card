@@ -16,11 +16,10 @@
 <body>
   <main id="container">
     <article id="product">
-      <picture class="product__img">
-        <source srcset="images/image-product-desktop.jpg" media="(min-width: 600px)">
-        <img src="images/image-product-mobile.jpg"
-          alt="Gabrielle Essense perfume bottle laying flat on a table with green leaves above and below it">
-      </picture>
+      <img srcset="images/image-product-desktop.jpg 600w, images/image-product-mobile.jpg 686w"
+          sizes="(max-width: 600px) 686px, 300px"
+          src="images/image-product-mobile.jpg"
+          alt="A bottle of perfume surrounded by foliage"/>
 
       <div class="product__content">
         <p class="product__category">Perfume</p>

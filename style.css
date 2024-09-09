@@ -1,7 +1,8 @@
 :root {
     --primary-dark-cyan: hsl(158, 36%, 37%);
     --primary-cream: hsl(30, 38%, 92%);
-  
+    --primary-dark-green: hsl(159, 47%, 18%);
+
     --neutral-dark-blue: hsl(212, 21%, 14%);
     --neutral-grayish-blue: hsl(228, 12%, 48%);
     --neutral-white: hsl(0, 0%, 100%);
@@ -17,13 +18,10 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 14px;
+    min-height: 100vh;
     color: var(--neutral-grayish-blue);
     background-color: var(--primary-cream);
-  
-    min-height: 100vh;
-    display: grid;
-    place-content: center;
-    margin: 1rem;
+    padding: 2rem 2rem 0 2rem;
   }
 
   h1 {
@@ -34,27 +32,17 @@ body {
     margin-bottom: 10px;
 }
 
-#container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 #product {
   background-color: var(--neutral-white);
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  max-width: 98vw;
+  max-width: 95vw;
+  margin-bottom: 2rem;
 } 
 
 img {
-  width: 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 0px;
+  border-radius: 20px 20px 0 0;
   flex: 1 0 50%;
   object-fit: cover;
  }
@@ -81,7 +69,8 @@ img {
 }
 
   .product__content {
-    padding: 2.1rem;
+    padding: 2rem;
+    border-radius: 0 0 20px 20px;
   }
 
   .product__category {
@@ -105,23 +94,28 @@ img {
 }
 
   button:hover {
-      background-color: var(--primary-dark-cyan);
+      background-color: var(--primary-dark-green);
   }
 
   button:active {
-      background-color: var(--primary-dark-cyan);
+      background-color: var(--primary-dark-green);
   }
 
-  .svg-icon {
+.svg-icon {
     margin-right: 1.5rem;
   }
 
-  /* #product {
-    padding: 1.5rem;
-    display: grid;
-    background-color: var(--neutral-white);
-    border-radius: 0.5rem;
-    overflow: hidden;
-    max-width: 600px;
+  @media only screen and (min-width: 768px) {
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-content: center;
+    }
+    #product {
+      flex-direction: row;
+      max-width: 600px;
   }
-   */
+  img {
+    border-radius: 20px 0 0 20px;
+  }
+}
