@@ -39,7 +39,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 #product {
@@ -47,7 +47,7 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  width: 95vw;
+  max-width: 95vw;
 } 
 
 img {
