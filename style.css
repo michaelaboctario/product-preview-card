@@ -32,6 +32,10 @@ body {
     margin-bottom: 10px;
 }
 
+.product__description {
+  line-height: 1.5rem;
+}
+
 #product {
   background-color: var(--neutral-white);
   display: flex;
