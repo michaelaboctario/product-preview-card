@@ -1,0 +1,127 @@
+:root {
+    --primary-dark-cyan: hsl(158, 36%, 37%);
+    --primary-cream: hsl(30, 38%, 92%);
+  
+    --neutral-dark-blue: hsl(212, 21%, 14%);
+    --neutral-grayish-blue: hsl(228, 12%, 48%);
+    --neutral-white: hsl(0, 0%, 100%);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--neutral-grayish-blue);
+    background-color: var(--primary-cream);
+  
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    margin: 1rem;
+  }
+
+  h1 {
+    font-family: "Fraunces", serif;
+    color: var(--neutral-dark-blue);
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+#product {
+  background-color: var(--neutral-white);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 95vw;
+} 
+
+img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+  flex: 1 0 50%;
+  object-fit: cover;
+ }
+
+  .product__price__group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+.product__price {
+    font-family: "Fraunces", serif;
+    color: var(--primary-dark-cyan);
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-right: 20px;
+}
+
+.ptoduct__price__original {
+    text-decoration: line-through;
+}
+
+  .product__content {
+    padding: 2.1rem;
+  }
+
+  .product__category {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+
+  button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    background-color: var(--primary-dark-cyan);
+    color: var(--neutral-white);
+    padding: 20px;
+    border-style: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  button:hover {
+      background-color: var(--primary-dark-cyan);
+  }
+
+  button:active {
+      background-color: var(--primary-dark-cyan);
+  }
+
+  .svg-icon {
+    margin-right: 1.5rem;
+  }
+
+  /* #product {
+    padding: 1.5rem;
+    display: grid;
+    background-color: var(--neutral-white);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    max-width: 600px;
+  }
+   */
